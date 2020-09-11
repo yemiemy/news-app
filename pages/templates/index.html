@@ -1,0 +1,127 @@
+{% load static %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Info</title>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+</head>
+<body>
+<div id="header">
+  <div id="headercontent">
+    <div id="title">
+      <h1><a href="{% url 'home' %}">Info</a></h1>
+      <p>An Online Blog</p>
+    </div>
+    <div id="topmenu">
+      <ul>
+        <li><a href="{% url 'home' %}"><span>Blog</span></a></li>
+        <li><a href="{% url 'home' %}"><span>About</span></a></li>
+        <li><a href="{% url 'home' %}"><span>Contact</span></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div id="container">
+  <div id="content">
+    <div class="posttitle">
+      <div class="postdate">Sep<span>09</span></div>
+      <h2><a href="{% url 'comments' %}">What is the Cloud? What is Cloud Computing?</a></h2>
+      <div class="postinfo"> <span class="postauthcat">Posted by <a href="{% url 'home' %}">Yemi</a> at 9:30 AM in <a href="{% url 'home' %}">General</a></span> </div>
+    </div>
+    <div class="posttext">
+      <p>The late Steve Jobs once said, “I don’t need a hard disk in my computer if I can get to the server faster.” 
+        The year was 1997, the internet itself was still in its infancy, and there was the Apple Co-Founder and longtime 
+        visionary talking about our future in something called the cloud.
+<br>
+        That term and this idea of storing and hosting data on a connected network of virtual machines rather 
+        than hard disks has grown in popularity since, just as he predicted: “Carrying around these non-connected computers 
+        is byzantine by comparison.” Here, we cover all the questions one could possibly 
+        have about the concept of cloud server hosting — from the cloud infrastructure to the cost and features to look for and beyond.</p>
+      <blockquote>
+        <p>Cloud servers are just virtual machines that run on what’s called a cloud computing environment. 
+          Rather than having a lone physical server, which is susceptible to hardware failure, cloud-hosted servers communicate over a 
+          network of connected servers — they’re all online, but none of your data is stored on a single hard drive.</p>
+      </blockquote>
+    </div>
+    <div class="postfooter"> <span class="postcomment"><a href="{% url 'comments' %}">4 Comments &raquo;</a></span> </div>
+    <div class="posttitle">
+      <div class="postdate">Sep<span>11</span></div>
+      <h2><a href="{% url 'comments' %}">Best SSD Web Hosting.</a></h2>
+      <div class="postinfo"> <span class="postauthcat">Posted by <a href="{% url 'home' %}">Yemi</a> at 11:50 PM in <a href="{% url 'home' %}">News</a></span> </div>
+    </div>
+    <div class="posttext">
+      <p>When I decided it was finally time (past time, actually) to switch my hosting plan to something better, 
+        there was one specific feature I wanted — SSDs. My sites were crawling along painfully slowly, and I’d had enough.
+<br>
+        We write plenty about how speed sells and performance is pivotal, but I wasn’t practicing what I preached. 
+        I had prioritized price over performance when shopping for my last hosting plan and wanted more for my modest collection of websites.
+        <br>
+        SSDs, which stand for solid-state drives, are an improved type of storage device that copies, writes, 
+        and opens files many times faster than traditional hard-disk drives, or HDDs. As the name implies, SSDs 
+        contain no moving parts; data is stored in flash-memory microchips, meaning the drives draw less power, create less noise, 
+        generate less heat, and last much longer than HDDs.
+        <br>
+        Because SSDs are a newer technology (gaining traction and popularity in the early 1990s, as opposed to when HDDs 
+        were introduced in the mid-1950s), they are more expensive and typically have less capacity than HDDs. While that doesn’t 
+        directly affect your hosting experience, you’ll understand why plans with SSDs tend to be pricier, come with lower storage 
+        limits — and still appeal to more seasoned web hosting customers.
+        <br>
+        Although I was only looking for shared hosting for my personal sites, I’ve combined my research and experience with 
+        the rest of the HostingAdvice team to provide a full menu of options for the various levels of SSD hosting. 
+        Read on to learn about the differences, along with which hosting providers offer the best plans and services.</p>
+      
+    </div>
+    <div class="postfooter"> <span class="postcomment"><a href="{% url 'comments' %}">3 Comments &raquo;</a></span> </div>
+    <div id="entrynav"> <span id="entrynext"><a href="{% url 'home' %}">Next Entries &raquo;</a></span> <a href="{% url 'home' %}">&laquo; Previous Entries</a> &nbsp; </div>
+  </div>
+  <div id="sidebar">
+    <div class="sidebarbox">
+      <div class="sidebarboxtop">
+        <h2>Search</h2>
+        <form method="get" id="searchform" action="{% url 'home' %}">
+          <p id="searchbox">
+            <input type="text" value="" name="s" id="searchinp" size="14" />
+            <input type="image" src=" {% static 'images/iconsearch.gif' %} " id="searchsubmit" />
+          </p>
+        </form>
+      </div>
+    </div>
+    <div class="sidebarbox">
+      <div class="sidebarboxtop">
+        <h2>Categories</h2>
+        <ul>
+          <li><a href="{% url 'home' %}">General</a></li>
+          <li><a href="{% url 'home' %}">News</a></li>
+          <li><a href="{% url 'home' %}">Internet</a></li>
+          <li><a href="{% url 'home' %}">Templates</a></li>
+          <li><a href="{% url 'home' %}">Software</a></li>
+          <li><a href="{% url 'home' %}">Photos</a></li>
+          <li><a href="{% url 'home' %}">Personal</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="sidebarbox">
+      <div class="sidebarboxtop">
+        <h2>Archives</h2>
+        <ul>
+          <li><a href="{% url 'home' %}">October 2020</a> (11)</li>
+          <li><a href="{% url 'home' %}">September 2020</a> (12)</li>
+          <li><a href="{% url 'home' %}">August 2020</a> (28)</li>
+          <li><a href="{% url 'home' %}">July 2020</a> (8)</li>
+          <li><a href="{% url 'home' %}">June 2020</a> (5)</li>
+          <li><a href="{% url 'home' %}">May 2020</a> (23)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <br />
+</div>
+<div id="footer">
+  <div id="footercontent">
+    <p>Copyright &copy; 2020 ads.herokuapp.com. 
+      Valid <a target="_blank" href="http://validator.w3.org/check?uri=referer">XHTML</a> &amp; <a target="_blank" href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a>. <a href="http://www.infscripts.com/">Design by Inf</a>.</p>
+  </div>
+</div>
+<div align='center'>This template  downloaded from <a href="{% url 'home' %}">free website templates</a></div></body>
+</html>

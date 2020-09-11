@@ -1,0 +1,201 @@
+{% load static %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Inf 04 - Comments</title>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href=" {% static 'style.css' %} " />
+</head>
+<body>
+<div id="header">
+  <div id="headercontent">
+    <div id="title">
+      <h1><a href="{% url 'home' %}">Info</a></h1>
+      <p>An online blog</p>
+    </div>
+    <div id="topmenu">
+      <ul>
+        <li><a href="{% url 'home' %}"><span>Blog</span></a></li>
+        <li><a href="{% url 'home' %}"><span>About</span></a></li>
+        <li><a href="{% url 'home' %}"><span>Contact</span></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div id="container">
+  <div id="content">
+    <div class="posttitle">
+      <div class="postdate">Sep<span>09</span></div>
+      <h2><a href="{% url 'home' %}">What is the Cloud? What is Cloud Computing?</a></h2>
+      <div class="postinfo"> <span class="postauthcat">Posted by <a href="{% url 'home' %}">Yemi</a> at 9:30 AM in <a href="{% url 'home' %}">General</a></span> </div>
+    </div>
+    <div class="posttext">
+      <p>The late Steve Jobs once said, “I don’t need a hard disk in my computer if I can get to the server faster.” The year was 1997, the internet itself was still in its infancy, and there was the Apple Co-Founder and longtime visionary talking about our future in something called the cloud.
+
+        That term and this idea of storing and hosting data on a connected network of virtual machines rather than hard disks 
+        has grown in popularity since, just as he predicted: “Carrying around these non-connected computers is byzantine by comparison.” 
+        Here, we cover all the questions one could possibly have about the concept of cloud server hosting — 
+        from the cloud infrastructure to the cost and features to look for and beyond.</p>
+      <blockquote>
+        <p>“I don’t need a hard disk in my computer if I can get to the server faster.” </p>
+      </blockquote>
+      <ol>
+        <li> 
+          <strong>What is Cloud Hosting?</strong>
+          <hr>
+          <p>So, first: What is a cloud server, and how does it differ from your run-of-the-mill physical servers?
+            <br>
+            Cloud servers are just virtual machines that run on what’s called a cloud computing environment. Rather than having a 
+            lone physical server, which is susceptible to hardware failure, cloud-hosted servers communicate over a network of connected 
+            servers — they’re all online, but none of your data is stored on a single hard drive.
+            <br>
+            Instead, your data is replicated and distributed across the network. In the event that a server or other piece of equipment fails, 
+            other devices are ready to fill in the gap and shoulder the workload. Cloud-based servers are software-independent, 
+            making them a highly available alternative to on-premise servers, especially if you’re in need of resources on demand.</p>
+  
+            <p>
+              <strong>Advantages of Cloud Hosting</strong><br>
+  The cloud is known for giving us the ability to send, store, and retrieve data in massive quantities, from anywhere in the world, at any given point in time. As such, there are several benefits of cloud hosting, but like anything else, those perks come at a cost.
+  <br>
+  On-Demand Resources: With cloud servers, you’re free to request resources on the fly and, typically, pay for them by the hour.
+  High Availability: Unlike physical, on-premise servers, virtualized cloud environments will transfer data to another machine without any downtime in the event of a hardware failure. The stability of cloud servers is second to none in the hosting realm.
+  Scale: With more resources and faster access to them, cloud hosts offer incredible scaling potential to customers. This is why these types of servers are used for other cloud-based services, collectively known as cloud computing.
+  <br>
+  <strong>Disadvantages of Cloud Hosting</strong><br>
+  Now, for the downsides: Most of these disadvantages, to be fair, can be offset by the strategic use of public and private cloud environments, or by choosing a top-notch host that alleviates these concerns.
+  <br>
+  Cost: The price point for this level of stability and scale tends to be a little higher than, say, VPS options. However, you get what you pay for in terms of resources and reliability.
+  Security: It’s hard to ever feel like your private data is actually kept private because you’re sharing cloud space with other cloud customers. This concern is mitigated, slightly, if you opt for single-tenant cloud hosting rather than a multi-tenant cloud server.
+  Infrastructure Management: Cloud servers can be technically demanding to maintain; you also have to be on your game to ensure you’re not running up unnecessary costs due to the pay-by-the-hour perk mentioned above.
+  Management can be a pain, but for those in need of on-demand resources — only when you need them and always where you are — cloud hosting can be a solution with an awesome cost-to-stability ratio.
+            </p>
+        </li>
+
+        <li> 
+          <strong>Are Cloud Services the Same as Cloud Servers?</strong>
+          <hr>
+          <p>It’s important to realize that there are several cloud-based services out there apart from web hosting services. 
+            Backing up your files online (e.g., Dropbox, Google Cloud, etc.), web applications, and other as-a-Service offerings 
+            (SaaS, Paas, IaaS) make up what we call cloud computing. In short, cloud computing just means a bunch of computers 
+            are sharing processing power and data with multiple devices.
+<br>
+            Cloud service providers are not necessarily the same as your cloud hosts, like the folks listed on this page. 
+            This can seem convoluted at first because those computing jobs are done on cloud server networks, but think of it this way: 
+            You can sign up for many various Internet-based resources and not have a website hosted on a server in the cloud. 
+            Just because you need cloud-based storage, for example, doesn’t mean you are shopping for cloud hosting. Get it?</p>
+        </li>
+        
+
+
+        <li> 
+          <strong> What Do Cloud Computing Companies Do?</strong>
+          <hr>
+          <p>Cloud computing providers might offer any or many of the following:
+          <br>
+          <ul>
+            <li>Backup-as-a-Service (online file storage, backup and restore, synchronization)</li>
+            <li>Software-as-a-Service (Microsoft 365, Google Apps, or any webmail service)</li>
+            <li>Platform-as-a-Service (Google App Engine, Heroku, or web servers like Apache)</li>
+            <li>Infrastructure-as-a-Service (Amazon EC2, Google Compute Engine, Rackspace, Windows Azure)</li>
+          </ul>
+            <br>
+            There are plenty other specific examples of services, but the ones listed above are some of the more well-known 
+            representations of the as-a-Service models of cloud computing. 
+            Much like the web hosting end of things, the benefits of cloud computing include fast access to tons of data whenever, wherever.</p>
+        </li>
+
+        
+      </ol>
+
+    </div>
+    <h3>4 Comments on "What is the Cloud? What is Cloud Computing?"</h3>
+    <ul id="commentlist">
+      <li class="commentalt"> <a href="{% url 'home' %}" class="commentname">Vestibulum</a> said on <a href="{% url 'home' %}">Oct 10th, 2020 at 10:15 AM</a>:
+        <p>Cras risus diam, condimentum at, fermentum sagittis, euismod sit amet, odio. Nulla facilisi. Curabitur purus lectus, iaculis nec, facilisis et, hendrerit non, felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Suspendisse tincidunt interdum mi.</p>
+      </li>
+      <li> <a href="{% url 'home' %}" class="commentname">Phasellus</a> said on <a href="{% url 'home' %}">Oct 11th, 2007 at 18:55 PM</a>:
+        <p>Nam id mi nec arcu facilisis tincidunt. Etiam sed eros et diam bibendum bibendum. In hac habitasse platea dictumst. Nullam eu odio et arcu pharetra consectetuer.</p>
+      </li>
+      <li class="commentalt"> <a href="{% url 'home' %}" class="commentname">Aenean</a> said on <a href="{% url 'home' %}">Oct 12th, 2007 at 14:25 PM</a>:
+        <p>Sed mi nisl, pharetra a, posuere a, laoreet id, mi. Duis elit dolor, tempus sed, molestie id, sollicitudin nec, felis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam metus elit, vehicula quis, blandit id, viverra sed, erat.</p>
+      </li>
+      <li> <a href="{% url 'home' %}" class="commentname">Mauris</a> said on <a href="{% url 'home' %}">Oct 13th, 2007 at 9:13 AM</a>:
+        <p>In suscipit, nisi ullamcorper ornare lobortis, neque erat rutrum arcu, id sollicitudin ligula libero et nisl. Aenean porttitor. Fusce ac justo ut elit laoreet sodales.</p>
+      </li>
+    </ul>
+    <div id="writecomment">
+      <div id="writecommenttop">
+        <form action="{% url 'home' %}" method="post" id="commentform">
+          <p>
+            <input type="text" name="author" id="author" value="" size="22" tabindex="1" />
+            <label for="author">Name (required)</label>
+          </p>
+          <p>
+            <input type="text" name="email" id="email" value="" size="22" tabindex="2" />
+            <label for="email">E-Mail (will not be published) (required)</label>
+          </p>
+          <p>
+            <input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+            <label for="url">Website</label>
+          </p>
+          <p>
+            <textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea>
+          </p>
+          <p>
+            <input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+            <input type="hidden" name="comment_post_ID" value="1" />
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div id="sidebar">
+    <div class="sidebarbox">
+      <div class="sidebarboxtop">
+        <h2>Search</h2>
+        <form method="get" id="searchform" action="{% url 'home' %}">
+          <p id="searchbox">
+            <input type="text" value="" name="s" id="searchinp" size="14" />
+            <input type="image" src=" {% static 'images/iconsearch.gif' %} " id="searchsubmit" />
+          </p>
+        </form>
+      </div>
+    </div>
+    <div class="sidebarbox">
+      <div class="sidebarboxtop">
+        <h2>Categories</h2>
+        <ul>
+          <li><a href="{% url 'home' %}">General</a></li>
+          <li><a href="{% url 'home' %}">News</a></li>
+          <li><a href="{% url 'home' %}">Internet</a></li>
+          <li><a href="{% url 'home' %}">Templates</a></li>
+          <li><a href="{% url 'home' %}">Software</a></li>
+          <li><a href="{% url 'home' %}">Photos</a></li>
+          <li><a href="{% url 'home' %}">Personal</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="sidebarbox">
+      <div class="sidebarboxtop">
+        <h2>Archives</h2>
+        <ul>
+          <li><a href="{% url 'home' %}">October 2007</a> (11)</li>
+          <li><a href="{% url 'home' %}">September 2007</a> (12)</li>
+          <li><a href="{% url 'home' %}">August 2007</a> (28)</li>
+          <li><a href="{% url 'home' %}">July 2007</a> (8)</li>
+          <li><a href="{% url 'home' %}">June 2007</a> (5)</li>
+          <li><a href="{% url 'home' %}">May 2007</a> (23)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <br />
+</div>
+<div id="footer">
+  <div id="footercontent">
+    <p>Copyright &copy; 2020 ads.herokuapp.com. 
+      Valid <a target="_blank" href="http://validator.w3.org/check?uri=referer">XHTML</a> &amp; <a target="_blank" href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a>. <a href="http://www.infscripts.com/">Design by Inf</a>.</p>
+  </div>
+</div>
+<div align=center>This template  downloaded form <a href='http://all-free-download.com/free-website-templates/'>free website templates</a></div></body>
+</html>
